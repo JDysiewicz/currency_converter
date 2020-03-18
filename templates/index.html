@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+		<title> Converter </title>
+	</head>
+	
+	<body class="background">
+		<div>
+			<form action="/" method="post">
+				<div class="form-group">
+					<select class="base" name="base">
+						<option selected disabled>Base Currency:</option>
+						<option value="GBP">British Pounds (GBP)</option>
+						<option value="EUR">Euros (EUR)</option>
+						<option value="USD">US Dollars (USD)</option>
+						<option value="CAD">Canadian Dollars (CAD)</option>
+						<option value="JPY">Japanese Yen (JPY)</option>
+						<option value="AUD">Australian Dollars (AUD)</option>
+						<option value="CHF">Swiss Francs (CHF)</option>
+						<option value="CNY">Chinese Yuan Renminbi (CNY)</option>
+						<option value="SEK">Swedish Kronas (SEK)</option>
+						<option value="MXN">Mexican Pesos (MXN)</option>
+						<option value="NZD">New Zealand Dollars (NZD)</option>
+						<option value="HKD">Hong Kong Dollars (HKD)</option>
+						<option value="KRW">South Korean Won (KRW)</option>
+						<option value="SGD">Singapore Dollars (SGD)</option>
+						<option value="TRY">Turkish Lira (TRY)</option>
+						<option value="NOK">Norwegian Krone (NOK)</option>
+						<option> value="INR">Indian Rupees (INR)</option>
+						<option value="RUB">Russian Rubles (RUB)</option>
+						<option value="BRL">Brazilian Real (BRL)</option>
+						<option value="ZAR">South African Rand (ZAR)</option>
+						<option value="PLN">Polish Zloty (PLN)</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<select class="target" name="target">
+						<option selected disabled>Converting to:</option>
+						<option value="GBP">British Pounds (GBP)</option>
+						<option value="EUR">Euros (EUR)</option>
+						<option value="USD">US Dollars (USD)</option>
+						<option value="CAD">Canadian Dollars (CAD)</option>
+						<option value="JPY">Japanese Yen (JPY)</option>
+						<option value="AUD">Australian Dollars (AUD)</option>
+						<option value="CHF">Swiss Francs (CHF)</option>
+						<option value="CNY">Chinese Yuan Renminbi (CNY)</option>
+						<option value="SEK">Swedish Kronas (SEK)</option>
+						<option value="MXN">Mexican Pesos (MXN)</option>
+						<option value="NZD">New Zealand Dollars (NZD)</option>
+						<option value="HKD">Hong Kong Dollars (HKD)</option>
+						<option value="KRW">South Korean Won (KRW)</option>
+						<option value="SGD">Singapore Dollars (SGD)</option>
+						<option value="TRY">Turkish Lira (TRY)</option>
+						<option value="NOK">Norwegian Krone (NOK)</option>
+						<option> value="INR">Indian Rupees (INR)</option>
+						<option value="RUB">Russian Rubles (RUB)</option>
+						<option value="BRL">Brazilian Real (BRL)</option>
+						<option value="ZAR">South African Rand (ZAR)</option>
+						<option value="PLN">Polish Zloty (PLN)</option>
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<input autocomplete="off" autofocus class="form-control" name="number" type="text"/>
+				</div>
+				<button class="btn btn-primary" type="submit">Convert!</button>
+			</form>
+
+		</div>
+		<div class="result">
+			Converted Amount: {{ converted }}
+			
+		</div>
+	</body>
+
+</html>
